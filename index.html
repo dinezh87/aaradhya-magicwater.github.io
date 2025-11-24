@@ -7,6 +7,19 @@
 </head>
 <body>
 
+<!-- ✨ Sparkle generator -->
+<script>
+  function createSparkle() {
+    const sparkle = document.createElement('div');
+    sparkle.classList.add('sparkle');
+    sparkle.style.left = Math.random() * window.innerWidth + 'px';
+    sparkle.style.animationDuration = (1 + Math.random()) + 's';
+    document.body.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 2000);
+  }
+  setInterval(createSparkle, 150);
+</script>
+
 <header>
   <h1>✨ Aaradhya's Magic Water ✨</h1>
   <nav>
@@ -17,10 +30,9 @@
   </nav>
 </header>
 
-<section class="welcome">
-  <h2>Welcome to Aaradhya’s Creative World! 🌈</h2>
-  <p>Here you will find her magical crafts, colourful drawings and creative imagination.</p>
-  <img src="images/home-cover.png" class="hero-img" alt="Aaradhya artwork placeholder">
+<section class="hero-banner">
+  <img src="images/logo.png" class="logo" alt="Cute logo">
+  <h2>Welcome to Aaradhya’s Creative World 🌈</h2>
 </section>
 
 <footer>
@@ -28,4 +40,3 @@
 </footer>
 
 </body>
-</html>
