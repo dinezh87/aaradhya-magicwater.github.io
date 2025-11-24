@@ -1,3 +1,102 @@
+/* 🌸 CUTE THEME WITH SPARKLES 🌸 */
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: #fff6fb;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ✨ Sparkle animation */
+.sparkle {
+  position: fixed;
+  top: -10px;
+  width: 6px;
+  height: 6px;
+  background: #ffe3f8;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: fall 1.8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh) scale(0.3);
+    opacity: 0;
+  }
+}
+
+/* 🌈 Cute banner */
+.hero-banner {
+  background: linear-gradient(#ffb6e6, #ffd4f3);
+  padding: 40px 20px;
+  border-bottom: 4px solid #ff8fd4;
+}
+
+.hero-banner h2 {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 15px;
+}
+
+/* Existing styling continues below */
+header {
+  background: #ffb6e6;
+  padding: 20px;
+  border-bottom: 4px solid #ff8fd4;
+}
+
+h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #ffb6e6;
+  padding: 15px;
+  margin-top: 40px;
+  color: white;
+}
+
+
 body {
   font-family: 'Comic Sans MS', cursive;
   background: #fff6fb;
